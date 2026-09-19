@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #aaaaaa;
+  background: #ffffff;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  background: #6b4226;
+}
+
+.logo {
+  height: 40px;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.menu-links {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.menu-links a {
+  color: #e0c9a6;
+  text-decoration: none;
+}
+
+.secao-cardapio,
+.secao-reserva {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.prato {
+  border-bottom: 1px solid #eeeeee;
+  padding: 16px 0;
+  position: relative;
+}
+
+.prato img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+
+.nome-prato {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.preco {
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.tag-vegetariano {
+  color: #4caf50;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.botao-carrinho {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 16px;
+  background: #6b4226;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.secao-reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 320px;
+}
+
+.secao-reserva input {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.rodape {
+  background: #f5f5f5;
+  padding: 16px 24px;
+  text-align: center;
+}
+
+.observacoes {
+  font-size: 10px;
+  color: #aaaaaa;
+}
