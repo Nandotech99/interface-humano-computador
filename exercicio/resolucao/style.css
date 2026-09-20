@@ -6,10 +6,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #aaaaaa;
-  background: #ffffff;
+  color: #2b110d;
+  background: rgb(243 231 223);
 }
-
+.botao-carrinho{
+}
 .topo {
   display: flex;
   align-items: center;
@@ -25,7 +26,8 @@ body {
 .titulo {
   font-size: 28px;
   font-weight: bold;
-  color: #ffffff;
+  color: #ffc462;
+
 }
 
 .menu-links {
@@ -35,7 +37,7 @@ body {
 }
 
 .menu-links a {
-  color: #e0c9a6;
+  color: #ffc668;
   text-decoration: none;
 }
 
@@ -64,35 +66,26 @@ body {
 .nome-prato {
   font-size: 18px;
   font-weight: bold;
-  color: #333333;
+  color: #55271a;
 }
 
 .descricao {
   font-size: 14px;
-  color: #aaaaaa;
+  color: #7e361d;
 }
 
 .preco {
   font-size: 14px;
-  color: #aaaaaa;
+  color: #5a1f11;
 }
 
 .tag-vegetariano {
-  color: #4caf50;
+  color: #0046ff;
   font-size: 12px;
   font-weight: bold;
 }
 
-.botao-carrinho {
-  display: inline-block;
-  margin-top: 8px;
-  padding: 8px 16px;
-  background: #6b4226;
-  color: #ffffff;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-}
+
 
 .secao-reserva form {
   display: flex;
@@ -103,18 +96,18 @@ body {
 
 .secao-reserva input {
   padding: 8px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   font-size: 14px;
 }
 
 .rodape {
-  background: #f5f5f5;
+  background: #a8715a;
   padding: 16px 24px;
   text-align: center;
 }
 
 .observacoes {
   font-size: 10px;
-  color: #aaaaaa;
+  color: #ffffff;
 }

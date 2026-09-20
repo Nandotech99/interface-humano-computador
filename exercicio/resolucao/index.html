@@ -1,88 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Café Ponto - Cardápio</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<header>
   <div class="topo">
-    <img src="imagens/logo.png" class="logo">
-    <div class="titulo">Café Ponto</div>
+    <img src="imagens/logo.png" class="logo" alt="Logo Café Ponto">
+    <div class="titulo">
+      <h1>Café Ponto</h1>
+    </div>
     <div class="menu-links">
       <a href="#cardapio">Cardápio</a>
       <a href="#reserva">Reservar</a>
-      <a href="#">clique aqui</a>
+      <!-- APAGUEI O CLIQUE PQ ELE NAO FAZ NADA -->
     </div>
   </div>
+</header>
 
+<main>
   <div id="cardapio" class="secao-cardapio">
-
-    <h4>Entradas</h4>
+    <h2>Entradas</h2>
     <div class="prato">
-      <img src="imagens/bruschetta.jpg">
+      <img src="imagens/bruschetta.jpg" alt="Entrada prato Bruschetta da Casa com Pão italiano, tomate, manjericão e azeite">
       <div class="nome-prato">Bruschetta da Casa</div>
       <div class="descricao">Pão italiano, tomate, manjericão e azeite.</div>
       <div class="preco">R$ 22,00</div>
       <span class="tag-vegetariano">vegetariano</span>
-      <div class="botao-carrinho" onclick="alert('Adicionado!')">Adicionar ao carrinho</div>
+      <button type="button">Adicionar ao carrinho</button>
     </div>
 
     <div class="prato">
-      <img src="imagens/tabua.jpg">
+      <img src="imagens/tabua.jpg" alt="Entrada prato Tábua de Frios com Queijos, presunto e geleia artesanal">
       <div class="nome-prato">Tábua de Frios</div>
       <div class="descricao">Queijos, presunto e geleia artesanal.</div>
       <div class="preco">R$ 38,00</div>
-      <div class="botao-carrinho" onclick="alert('Adicionado!')">Adicionar ao carrinho</div>
+      <button type="button">Adicionar ao carrinho</button>
     </div>
 
-    <h4>Pratos Principais</h4>
+    <h2>Pratos Principais</h2>
     <div class="prato">
-      <img src="imagens/risoto.jpg">
+      <img src="imagens/risoto.jpg" alt="Prato Principal Risoto de Cogumelos com Arroz arbóreo, cogumelos frescos e parmesão">
       <div class="nome-prato">Risoto de Cogumelos</div>
       <div class="descricao">Arroz arbóreo, cogumelos frescos e parmesão.</div>
       <div class="preco">R$ 46,00</div>
       <span class="tag-vegetariano">vegetariano</span>
-      <div class="botao-carrinho" onclick="alert('Adicionado!')">Adicionar ao carrinho</div>
+      <button type="button">Adicionar ao carrinho</button>
     </div>
 
     <div class="prato">
-      <img src="imagens/salmao.jpg">
+      <img src="imagens/salmao.jpg" alt="Prato Principal Salmão Grelhado com legumes salteados e molho de ervas">
       <div class="nome-prato">Salmão Grelhado</div>
       <div class="descricao">Salmão grelhado, legumes salteados e molho de ervas.</div>
       <div class="preco">R$ 58,00</div>
-      <div class="botao-carrinho" onclick="alert('Adicionado!')">Adicionar ao carrinho</div>
+      <button type="button">Adicionar ao carrinho</button>
     </div>
 
-    <h4>Sobremesas</h4>
+    <h2>Sobremesas</h2>
     <div class="prato">
-      <img src="imagens/pudim.jpg">
+      <img src="imagens/pudim.jpg" alt="Sobremesa Pudim de Leite com calda de caramelo">
       <div class="nome-prato">Pudim de Leite</div>
       <div class="descricao">Receita da casa, com calda de caramelo.</div>
       <div class="preco">R$ 18,00</div>
       <span class="tag-vegetariano">vegetariano</span>
-      <div class="botao-carrinho" onclick="alert('Adicionado!')">Adicionar ao carrinho</div>
+      <button type="button">Adicionar ao carrinho</button>
     </div>
-
   </div>
 
   <div id="reserva" class="secao-reserva">
-    <h4>Reserve sua mesa</h4>
+    <h3>Reserve sua mesa</h3>
     <form>
-      <input type="text" placeholder="Seu nome*">
-      <input type="tel" placeholder="Telefone*">
-      <input type="date" placeholder="Data">
-      <input type="number" placeholder="Número de pessoas">
-      <div class="botao-carrinho" onclick="alert('Reserva enviada!')">Enviar reserva</div>
+      <!-- Associação dos campos -->
+      <div>
+        <label for="nome">Seu nome*:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div>
+        <label for="telefone">Telefone*:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+
+      <div>
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data">
+      </div>
+
+      <div>
+        <label for="pessoas">Número de pessoas:</label>
+        <input type="number" id="pessoas" name="pessoas">
+      </div>
+
+      <button type="submit">Reservar Mesa</button>
     </form>
   </div>
+</main>
 
+<footer>
   <div class="rodape">
     <p class="observacoes">* Campos obrigatórios. Sujeito a disponibilidade de mesas. Consulte condições no balcão.</p>
     <p>Café Ponto — Rua das Flores, 123</p>
   </div>
+</footer>
 
 </body>
 </html>
